@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Preloader from './components/Preloader'
+import Page from './components/Page'
+import { useEffect, useState } from 'react';
+import {AnimatePresence, motion} from 'framer-motion'
 
 function App() {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5380)
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading? <Preloader/> : <motion.div >
+        <AnimatePresence><Page/></AnimatePresence>
+      </motion.div>}
     </div>
-  );
+  )
+}
+
+export function page() {
+  return (
+    <div>
+      <h1>hello</h1>
+    </div>
+  )
 }
 
 export default App;

@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 238, 219);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    width: 100%;
+    max-height: 10vh;
+    z-index: 10000;
+    background-color: rgb(250, 238, 219);
+    
+  }
+
+  .logo {
+    padding-left: 2vw;
+    font-family:"Cedarville Cursive";
+    font-size: 4vmin;
+  }
+
+ .headers {
+    display: flex;
+    justify-content: end; /* Space out evenly */
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 2.5vmin;
+    gap: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+ }
+ .headers a img{
+    height: 4vh;
+ }
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 61vh;
+    margin-top: 10vh;
+    z-index: 1000;
+    
+
+}
+
+.body-container {
+    padding-top: 1vh;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+
+.body-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    width: 90%;
+    height: 80%;
+}
+
+.lines p {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+#firstline {
+    font-family:monospace;
+    font-size: 8vmin;
+}
+
+#secondline {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15vmin;
+}
+
+#thirdline {
+    font-family:"Roboto";
+    font-size: 3vmin;
+    padding-top: 3vh;
+    line-height: 4vh;
+}
+
+#resume {
+    align-self: center;
+    width: 30%;
+    padding: 2%;
+    border-radius: 2vmin;
+    border-style: solid;
+    background-color: black;
+    color:rgb(250, 238, 219);
+    margin-top: 3vh;
+    font-size: 3vmin;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+#resume:hover{
+    align-self: center;
+    width: 30%;
+    padding: 2%;
+    border-radius: 2vmin;
+    border-style: solid;
+    background-color: transparent;
+    color: black;
+    margin-top: 3vh;
+    font-size: 3vmin;
+    text-decoration: none;
+}
+
+.body-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#img {
+    height: 45vmin;
+    
+}
+
+
+
+.plane-animation{
+    height: 39vh;
+    display: felx;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+}
+
+.plane1-container, .plane2-container {
+    border-color: none;
+    height: 13vh;
+    background-color: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plane3-container {
+    background-color: none;
+    height: 13vh;
+    background-color: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+    
+}
+
+.plane1 {
+    height: 100%;
+    width: 10%;
+    right: 100%;
+    top: 50%;
+    animation: moveLeftRightWave 12s linear infinite;
+    background-color: none;
+    position: absolute;
+    transform: translateY(-50%); /* Vertically center the plane */
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+#plane1 {
+    height: 100%;
+    position: relative;
+}
+
+.plane2 {
+    height: 100%;
+    width: 10%;
+    right: 100%;
+    top: 50%;
+    animation: moveMiddleWave 12s linear infinite;
+    background-color: none;
+    position: absolute;
+    transform: translateY(-50%); /* Vertically center the plane */
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+#plane2 {
+    height: 100%;
+    position: relative;
+}
+
+.plane3 {
+    height: 100%;
+    width: 10%;
+    right: 100%;
+    top: 50%;
+    animation: moveLefttWave 12s linear infinite;
+    background-color: none;
+    position: absolute;
+    transform: translateY(-50%); /* Vertically center the plane */
+    align-items: first baseline;
+    display: flex;
+    justify-content: left;
+}
+
+#plane3 {
+    height: 100%;
+    position: relative;
+}
+
+@keyframes moveLeftRightWave {
+    0% {
+        right: 90%; /* Off-screen to the right */
+        top: 60%; /* Middle of the screen */
+    }
+
+    10% {
+        right: 80%;
+        top: 40%;
+    }
+
+    20% {
+        right: 60%;
+        top: 60%;
+    }
+
+    30% {
+        right: 40%;
+        top: 40%;
+    }
+
+    40% {
+        right: 20%;
+        top: 60%;
+    }
+
+    50% {
+        right: -5%;
+        top: 40%;
+    }
+
+    60% {
+        right: 20%;
+        top: 60%;
+    }
+
+    70% {
+        right: 40%;
+        top: 40%;
+    }
+
+    80% {
+        right: 60%;
+        top: 60%;
+    }
+
+    90% {
+        right: 80%;
+        top: 40%;
+    }
+
+    100% {
+        right: 90%;
+        top: 60%;
+    }
+}
+
+@keyframes moveLefttWave {
+    0% {
+        left: 90%; /* Off-screen to the right */
+        top: 60%; /* Middle of the screen */
+    }
+
+    10% {
+        left: 80%;
+        top: 40%;
+    }
+
+    20% {
+        left: 60%;
+        top: 60%;
+    }
+
+    30% {
+        left: 40%;
+        top: 40%;
+    }
+
+    40% {
+        left: 20%;
+        top: 60%;
+    }
+
+    50% {
+        left: -5%;
+        top: 40%;
+    }
+
+    60% {
+        left: 20%;
+        top: 60%;
+    }
+
+    70% {
+        left: 40%;
+        top: 40%;
+    }
+
+    80% {
+        left: 60%;
+        top: 60%;
+    }
+
+    90% {
+        left: 80%;
+        top: 40%;
+    }
+
+    100% {
+        left: 90%;
+        top: 60%;
+    }
+}
+
+@keyframes moveMiddleWave {
+    0% {
+        right: 60%; /* Off-screen to the right */
+        top: 60%; /* Middle of the screen */
+    }
+
+    10% {
+        right: 80%;
+        top: 40%;
+    }
+
+    20% {
+        right: 100%;
+        top: 60%;
+    }
+
+    30% {
+        right: 80%;
+        top: 40%;
+    }
+
+    40% {
+        right: 60%;
+        top: 60%;
+    }
+
+    50% {
+        right: 40%;
+        top: 40%;
+    }
+
+    60% {
+        right: 20%;
+        top: 60%;
+    }
+
+    70% {
+        right: 0%;
+        top: 40%;
+    }
+
+    80% {
+        right: 20%;
+        top: 60%;
+    }
+
+    90% {
+        right: 40%;
+        top: 40%;
+    }
+
+    100% {
+        right: 60%;
+        top: 60%;
+    }
+}
+
+
+
+.section2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expereince-container {
+    height: 100%;
+    width: 60%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueprint {
+    background-color: red;
+    height:50%;
+    width: 100%
+}
+
+.hatch {
+    background-color: pink;
+    height: 50%;
+    width: 100%
+}

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github.io/website/static/css/main.856da885.css",
-    "main.js": "/github.io/website/static/js/main.7fb89f9b.js",
-    "static/media/img.png": "/github.io/website/static/media/img.0138f6b892820da372b3.png",
-    "static/media/plane2.png": "/github.io/website/static/media/plane2.fff290a745f916074518.png",
-    "static/media/plane1.png": "/github.io/website/static/media/plane1.9621b932fc4989a408de.png",
-    "static/media/email.png": "/github.io/website/static/media/email.a56ef91abe84840d7237.png",
-    "static/media/linkden.png": "/github.io/website/static/media/linkden.6d58dbe88058f8dab0f9.png",
-    "index.html": "/github.io/website/index.html",
-    "main.856da885.css.map": "/github.io/website/static/css/main.856da885.css.map",
-    "main.7fb89f9b.js.map": "/github.io/website/static/js/main.7fb89f9b.js.map"
+    "main.css": "/static/css/main.856da885.css",
+    "main.js": "/static/js/main.796060c6.js",
+    "static/media/img.png": "/static/media/img.0138f6b892820da372b3.png",
+    "static/media/plane2.png": "/static/media/plane2.fff290a745f916074518.png",
+    "static/media/plane1.png": "/static/media/plane1.9621b932fc4989a408de.png",
+    "static/media/email.png": "/static/media/email.a56ef91abe84840d7237.png",
+    "static/media/linkden.png": "/static/media/linkden.6d58dbe88058f8dab0f9.png",
+    "index.html": "/index.html",
+    "main.856da885.css.map": "/static/css/main.856da885.css.map",
+    "main.796060c6.js.map": "/static/js/main.796060c6.js.map"
   },
   "entrypoints": [
     "static/css/main.856da885.css",
-    "static/js/main.7fb89f9b.js"
+    "static/js/main.796060c6.js"
   ]
 }

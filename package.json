@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Astoriaaaa/github.io/website",
+  "homepage": "https://Astoriaaaa/github.io/Personal Website",
   "name": "website",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "pre-deploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

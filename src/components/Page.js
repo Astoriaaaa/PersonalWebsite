@@ -53,7 +53,7 @@ export default function Page() {
                     </div>
                 </motion.div>
             </motion.div>
-            <div className="section2">
+            {/* <div className="section2">
                 <div className="expereince-container">
                     <div className="blueprint">
                         <h1>test1</h1>
@@ -62,7 +62,7 @@ export default function Page() {
                          <h2>text2</h2>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
     

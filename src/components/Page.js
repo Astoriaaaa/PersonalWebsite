@@ -31,7 +31,7 @@ export default function Page() {
                                 <p id="firstline">Hi, my name is</p>
                                 <p id="secondline">Aayushma</p>
                                 <p id="thirdline">I'm a second year mathematics and computing student @ University of Waterloo</p>
-                                <a href="www.youtube.com" id="resume" target="_blank">Resume</a>
+                                <a href="https://drive.google.com/file/d/11wFbF0dgzjBx2v7eyMVb3YqH5saXyV_d/view?usp=sharing" id="resume" target="_blank">Resume</a>
                             </div>
                         </div>
                         <div className="body-image">

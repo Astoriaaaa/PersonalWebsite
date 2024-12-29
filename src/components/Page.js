@@ -30,7 +30,7 @@ export default function Page() {
                             <div className="lines">
                                 <p id="firstline">Hi, my name is</p>
                                 <p id="secondline">Aayushma</p>
-                                <p id="thirdline">I'm a second year mathematics and computing student @ University of Waterloo</p>
+                                <p id="thirdline">I'm a second year mathematics and computing student @ uwaterloo </p>
                                 <a href="https://drive.google.com/file/d/11wFbF0dgzjBx2v7eyMVb3YqH5saXyV_d/view?usp=sharing&id=11wFbF0dgzjBx2v7eyMVb3YqH5saXyV_d" id="resume" target="_blank">Resume</a>
                             </div>
                         </div>

@@ -63,9 +63,12 @@
     width: 100%;
     height: 61vh;
     margin-top: 10vh;
-    z-index: 1000;
-    
-
+    z-index: 1000; 
+}
+@media (max-width: 1100px) {
+    .body {
+        height:40vh;
+    }
 }
 
 .body-container {
@@ -76,7 +79,13 @@
     align-items: center;
     width: 80vw;
     height: 100%;
+    
 }
+/* @media (max-width:900px) {
+    .body-container {
+        width:90vw
+    }
+} */
 
 .body-text {
     width: 50%;
@@ -84,7 +93,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: last baseline;
+    align-items: center;
+    /* background-color: aqua;  */
+}
+@media (max-width: 1050px) {
+    .body-text {
+        flex: 2;
+    }
 }
 
 .lines {
@@ -94,6 +109,12 @@
     align-items: first baseline;
     width: 90%;
     height: 80%;
+    /* background-color: red; */
+}
+@media (max-width: 500px) {
+    .lines{
+        width: 98%;
+    } 
 }
 
 .lines p {
@@ -104,20 +125,92 @@
 
 #firstline {
     font-family:monospace;
-    font-size: 8vmin;
+    font-size: 8vh;
+    /* background-color: red; */
 }
+@media (max-width: 1300px) {
+    #firstline {
+        font-size: 7vh;
+    }
+}
+@media (max-width: 950px) {
+    #firstline {
+        font-size: 5.5vh;
+    }
+}
+@media (max-width: 600px) {
+    #firstline {
+        font-size: 4.5vh;
+    }
+} 
+
 
 #secondline {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 15vmin;
+    /* background-color: blue; */
 }
+
+@media (max-width: 1200px) {
+    #secondline {
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 13vmin;
+    }
+}
+
+@media (max-width: 1050px) {
+    #secondline {
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 11vmin;
+    }
+}
+@media (max-width: 750px) {
+    #secondline {
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 10.5vmin;
+    }
+} 
+
 
 #thirdline {
     font-family:"Roboto";
+    /* background-color: pink; */
     font-size: 3vmin;
     padding-top: 3vh;
+    margin-right: 7vw;
     line-height: 4vh;
+}
+@media (max-width: 1100px) {
+    #thirdline {
+        font-size: 2.5vmin;
+        padding-top: 2vh;
+        line-height: 3vh;
+    }
+}
+@media (max-width: 800px) {
+    #thirdline {
+        font-size: 2.1vmin;
+        padding-top: 1.5vh;
+        line-height: 2.8vh;
+    }
+}
+@media (max-width: 650px) {
+    #thirdline {
+        font-size: 2.1vmin;
+        padding-top: 1.5vh;
+        line-height: 2.4vh;
+    }
+}
+@media (max-width: 550px) {
+    #thirdline {
+        font-size: 2.1vmin;
+        padding-top: 1.5vh;
+        line-height: 2vh;
+    }
 }
 
 #resume {
@@ -154,13 +247,28 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
+    /* background-color: green;  */
+}
+@media (max-width: 900px) {
+    .body-image {
+        flex: 1;
+    }
 }
 
 #img {
     height: 45vmin;
     
+}
+@media (max-width: 1100px) {
+    #img {
+        height: 38vmin
+    }
+}
+@media (max-width: 900px) {
+    #img {
+        height: 30vmin
+    }
 }
 
 
@@ -171,11 +279,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: none;
+
 }
 
-.plane1-container, .plane2-container {
-    border-color: none;
+.plane1-container {
     height: 13vh;
     background-color: none;
     position: relative;
@@ -185,13 +292,12 @@
 }
 
 .plane3-container {
-    background-color: none;
     height: 13vh;
     background-color: none;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items:center;
     justify-content: center;
     
 }
@@ -214,25 +320,18 @@
     height: 100%;
     position: relative;
 }
-
-.plane2 {
-    height: 100%;
-    width: 10%;
-    right: 100%;
-    top: 50%;
-    animation: moveMiddleWave 12s linear infinite;
-    background-color: none;
-    position: absolute;
-    transform: translateY(-50%); /* Vertically center the plane */
-    align-items: center;
-    display: flex;
-    justify-content: left;
+@media (max-width: 1050px) {
+    #plane1 {
+        height: 80%
+    }
+}
+@media (max-width: 500px) {
+    #plane1 {
+        height: 60%
+    }
 }
 
-#plane2 {
-    height: 100%;
-    position: relative;
-}
+
 
 .plane3 {
     height: 100%;
@@ -251,6 +350,16 @@
 #plane3 {
     height: 100%;
     position: relative;
+}
+@media (max-width: 1050px) {
+    #plane3 {
+        height: 80%
+    }
+}
+@media (max-width: 500px) {
+    #plane3 {
+        height: 60%
+    }
 }
 
 @keyframes moveLeftRightWave {
@@ -367,62 +476,6 @@
     }
 }
 
-@keyframes moveMiddleWave {
-    0% {
-        right: 60%; /* Off-screen to the right */
-        top: 60%; /* Middle of the screen */
-    }
-
-    10% {
-        right: 80%;
-        top: 40%;
-    }
-
-    20% {
-        right: 100%;
-        top: 60%;
-    }
-
-    30% {
-        right: 80%;
-        top: 40%;
-    }
-
-    40% {
-        right: 60%;
-        top: 60%;
-    }
-
-    50% {
-        right: 40%;
-        top: 40%;
-    }
-
-    60% {
-        right: 20%;
-        top: 60%;
-    }
-
-    70% {
-        right: 0%;
-        top: 40%;
-    }
-
-    80% {
-        right: 20%;
-        top: 60%;
-    }
-
-    90% {
-        right: 40%;
-        top: 40%;
-    }
-
-    100% {
-        right: 60%;
-        top: 60%;
-    }
-}
 
 
 

@@ -3,23 +3,29 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+
 }
 
-.page{
+
+
+
+
+
+  .page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
+    overflow: scroll;
+  }
 
 .section1{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(250, 238, 219);
+    background-color: rgb(36 72 85);
 }
 
 .nav-bar {
@@ -30,16 +36,17 @@
     position: fixed; /* Keep it fixed at the top */
     top: 0;
     width: 100%;
-    max-height: 10vh;
+    max-height: 10vmin;
     z-index: 10000;
-    background-color: rgb(250, 238, 219);
+    background-color: rgb(36 72 85);
+    color: rgb(246, 229, 190);
     
   }
 
   .logo {
     padding-left: 2vw;
     font-family:"Cedarville Cursive";
-    font-size: 4vmin;
+    font-size: max(5vmin, 1.5rem);
   }
 
  .headers {
@@ -47,229 +54,143 @@
     justify-content: end; /* Space out evenly */
     align-items: center;
     font-family: "Roboto";
-    font-size: 2.5vmin;
-    gap: 3vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    
+    padding-left: 5vw;    
  }
- .headers a img{
-    height: 4vh;
- }
+ 
 .body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 61vh;
-    margin-top: 10vh;
+    height: 55vh;
+    margin-top: 12vmin;
     z-index: 1000; 
+    min-height: 330px;
+
+    /* background: purple; */
 }
-@media (max-width: 1100px) {
+
+@media (max-width: 1000px) {
     .body {
-        height:40vh;
+        height: 42vh;
+    }
+}
+@media (max-width: 700px) {
+    .body {
+        height: 65vh;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
 
-.body-container {
-    padding-top: 1vh;
-    flex-shrink: 1;
+
+
+.body-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    height: 100%;
-    
+    height: 85%;
+    width: 100%;
+    flex: 3;
+    /* background-color: aqua; */
 }
-/* @media (max-width:900px) {
-    .body-container {
-        width:90vw
+/* @media (max-width: 1000px) {
+    .body-text {
+        align-items: end;
     }
 } */
 
-.body-text {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aqua;  */
-}
-@media (max-width: 1050px) {
-    .body-text {
-        flex: 2;
-    }
-}
+
+
 
 .lines {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: first baseline;
-    width: 90%;
-    height: 80%;
+    align-items:last baseline;
+    width: fit-content; 
     /* background-color: red; */
 }
-@media (max-width: 500px) {
-    .lines{
-        width: 98%;
-    } 
+
+.socials {
+    display: flex;
+    justify-content:flex-start;
+    align-items: last baseline;
+    width: fit-content;
 }
 
-.lines p {
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-}
+.socials a {
+    height: 3vh;
+    min-height: 1.5rem;
+    padding-right: min(3.5rem, 6vw);
+    padding-bottom: 2vmin;
+
+ }
+
+ .photo {
+    /* background-color: red; */
+    flex: 2;
+ }
+
+
 
 #firstline {
     font-family:monospace;
-    font-size: 8vh;
-    /* background-color: red; */
+    width: 100%;
+    align-content: end;
+    font-size: clamp(1.6rem, 5vw, 3.5rem);
+    color: rgb(246, 229, 190);
+    /* background-color: blueviolet; */
 }
-@media (max-width: 1300px) {
+
+@media (max-height: 800px) and (min-width: 800px) {
     #firstline {
-        font-size: 7vh;
+        font-size: 2.5rem;
     }
 }
-@media (max-width: 950px) {
-    #firstline {
-        font-size: 5.5vh;
-    }
-}
-@media (max-width: 600px) {
-    #firstline {
-        font-size: 4.5vh;
-    }
-} 
+
+
+
+
+
 
 
 #secondline {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 15vmin;
-    /* background-color: blue; */
+    width: 100%;
+    font-size: clamp(2.8rem, 11vw, 7rem);
+    color: rgb(233, 118, 103)
+    /* background-color: red; */
 }
-
-@media (max-width: 1200px) {
+@media (max-height: 800px) and (min-width: 800px){
     #secondline {
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 13vmin;
+        font-size: 5.5rem;
     }
 }
 
-@media (max-width: 1050px) {
-    #secondline {
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 11vmin;
-    }
-}
-@media (max-width: 750px) {
-    #secondline {
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 10.5vmin;
-    }
-} 
+
 
 
 #thirdline {
     font-family:"Roboto";
+    width: 100%;
+    font-size: 100%;
+    align-content: end;
+    line-height: clamp(0.9rem, 3vw, 2rem);
+    padding-top: 0.5vh;
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    color: rgb(246, 229, 190);
     /* background-color: pink; */
-    font-size: 3vmin;
-    padding-top: 3vh;
-    margin-right: 7vw;
-    line-height: 4vh;
 }
-@media (max-width: 1100px) {
+@media (max-height: 800px) and (min-width: 800px){
     #thirdline {
-        font-size: 2.5vmin;
-        padding-top: 2vh;
-        line-height: 3vh;
-    }
-}
-@media (max-width: 800px) {
-    #thirdline {
-        font-size: 2.1vmin;
-        padding-top: 1.5vh;
-        line-height: 2.8vh;
-    }
-}
-@media (max-width: 650px) {
-    #thirdline {
-        font-size: 2.1vmin;
-        padding-top: 1.5vh;
-        line-height: 2.4vh;
-    }
-}
-@media (max-width: 550px) {
-    #thirdline {
-        font-size: 2.1vmin;
-        padding-top: 1.5vh;
-        line-height: 2vh;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 }
 
-#resume {
-    align-self: center;
-    width: 30%;
-    padding: 2%;
-    border-radius: 2vmin;
-    border-style: solid;
-    background-color: black;
-    color:rgb(250, 238, 219);
-    margin-top: 3vh;
-    font-size: 3vmin;
-    display: flex;
-    justify-content: center;
-    font-family: "Roboto";
-    text-decoration: none;
-}
-
-#resume:hover{
-    align-self: center;
-    width: 30%;
-    padding: 2%;
-    border-radius: 2vmin;
-    border-style: solid;
-    background-color: transparent;
-    color: black;
-    margin-top: 3vh;
-    font-size: 3vmin;
-    text-decoration: none;
-}
-
-.body-image {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    /* background-color: green;  */
-}
-@media (max-width: 900px) {
-    .body-image {
-        flex: 1;
-    }
-}
-
-#img {
-    height: 45vmin;
-    
-}
-@media (max-width: 1100px) {
-    #img {
-        height: 38vmin
-    }
-}
-@media (max-width: 900px) {
-    #img {
-        height: 30vmin
-    }
-}
 
 
 
@@ -280,6 +201,12 @@
     flex-direction: column;
     align-items: center;
 
+}
+
+@media (max-width: 700px) {
+    .plane-animation {
+        height: 26vh;
+    }
 }
 
 .plane1-container {
@@ -325,9 +252,20 @@
         height: 80%
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     #plane1 {
-        height: 60%
+        height: 70%
+    }
+}
+@media (max-width: 600px) {
+    #plane1 {
+        height: 55%
+    }
+}
+
+@media (max-width: 420px) {
+    #plane1 {
+        height: 45%
     }
 }
 
@@ -356,9 +294,20 @@
         height: 80%
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     #plane3 {
-        height: 60%
+        height: 70%
+    }
+}
+@media (max-width: 600px) {
+    #plane3 {
+        height: 55%
+    }
+}
+
+@media (max-width: 420px) {
+    #plane3 {
+        height: 45%
     }
 }
 

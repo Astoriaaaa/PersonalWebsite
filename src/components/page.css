@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cartoon-free');
+
+
+:root {
+    --background: #DED4e8;  /* Blue */
+    --lightText: #c7395f; /* Green */
+    --darkText: #e8ba40; /* Light Gray */
+    --Accents: #000000; /* Dark Gray */
+    --boxes:
+  }
 
 * {
     margin: 0;
@@ -8,24 +18,20 @@
 }
 
 
-
-
-
-
   .page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: scroll;
+    background-color: var(--background);
+
   }
 
 .section1{
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(36 72 85);
 }
 
 .nav-bar {
@@ -38,15 +44,15 @@
     width: 100%;
     max-height: 10vmin;
     z-index: 10000;
-    background-color: rgb(36 72 85);
-    color: rgb(246, 229, 190);
+    background-color: var(--background); 
+    color: var(--lightText);
     
   }
 
   .logo {
     padding-left: 2vw;
     font-family:"Cedarville Cursive";
-    font-size: max(5vmin, 1.5rem);
+    font-size: max(4vmin, 1.5rem);
   }
 
  .headers {
@@ -80,6 +86,7 @@
         height: 65vh;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
     }
 }
@@ -95,11 +102,11 @@
     flex: 3;
     /* background-color: aqua; */
 }
-/* @media (max-width: 1000px) {
+@media (max-width: 700px) {
     .body-text {
-        align-items: end;
+       flex: 2;
     }
-} */
+}
 
 
 
@@ -111,6 +118,12 @@
     align-items:last baseline;
     width: fit-content; 
     /* background-color: red; */
+}
+@media (max-width: 1100px) and (min-width: 700px) {
+    .lines {
+        margin-left: 4rem;
+    }
+    
 }
 
 .socials {
@@ -129,18 +142,37 @@
  }
 
  .photo {
-    /* background-color: red; */
+    position: relative;
+    width: 80%;
     flex: 2;
+    display: flex;
+    justify-content: center;
  }
+
+ #headshot {
+    position: relative;
+    height: 20rem
+ }
+
+ @media (max-width: 1000px) {
+    #headshot {
+        height: 15rem;
+    }
+    
+ }
+
+ 
 
 
 
 #firstline {
-    font-family:monospace;
+    font-family: "Roboto";
     width: 100%;
     align-content: end;
+    font-weight: 500;
+    letter-spacing: 1rem;
     font-size: clamp(1.6rem, 5vw, 3.5rem);
-    color: rgb(246, 229, 190);
+    color: var(--lightText);
     /* background-color: blueviolet; */
 }
 
@@ -150,25 +182,47 @@
     }
 }
 
+@media (max-width: 700px) {
+    #firstline {
+        letter-spacing: clamp(0.6rem, 1vw, 0.8rem);
+        font-size: clamp(1.2rem, 5vw, 2rem);
+    }
+}
 
 
 
-
-
-
-#secondline {
-    font-family:Arial, Helvetica, sans-serif;
+#secondline{
+    font-family:'CARTOON FREE';
     font-weight: 600;
     width: 100%;
     font-size: clamp(2.8rem, 11vw, 7rem);
-    color: rgb(233, 118, 103)
+    color: var(--darkText);
+    text-shadow: 
+    2px 2px 0px rgba(0, 0, 0, 0.7), /* bottom-right */
+    -2px -2px 0px rgba(0, 0, 0, 0.7), /* top-left */
+    2px -2px 0px rgba(0, 0, 0, 0.7), /* top-right */
+    -2px 2px 0px rgba(0, 0, 0, 0.7); /* bottom-left */
     /* background-color: red; */
 }
+
 @media (max-height: 800px) and (min-width: 800px){
     #secondline {
         font-size: 5.5rem;
     }
 }
+
+@media (min-width: 1200px){
+    #secondline {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #secondline {
+        font-size: clamp(2.8rem, 14vw, 7rem);
+    }
+}
+
 
 
 
@@ -181,8 +235,7 @@
     line-height: clamp(0.9rem, 3vw, 2rem);
     padding-top: 0.5vh;
     font-size: clamp(0.8rem, 2.5vw, 1.5rem);
-    color: rgb(246, 229, 190);
-    /* background-color: pink; */
+    color: var(--lightText);
 }
 @media (max-height: 800px) and (min-width: 800px){
     #thirdline {
@@ -429,32 +482,249 @@
 
 
 .section2{
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+
+}
+
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 90vw;
+    font-family: "Roboto";
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    display: flex;
     justify-content: center;
 }
 
-.expereince-container {
+.right {
+    left: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px; 
+    z-index: 11;
+    background-color: var(--background);
+
+}
+
+.right img {
+    left: -20px
+}
+
+.animated-div {
+    width: 30vw;
+    padding: 50px 50px;
+    background-color: var(--lightText);;
+    color: var(--darkText);
+    position: relative;
+    border-radius: 6px;
+    margin-right: 3rem;
+    left: -30%;
+    opacity: 20%;
+}
+
+.odd {
+    left: 30%;
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+.visible {
+    left: 0%;
+    opacity: 1;
+    transition: left 0.5s linear, opacity 0.5s linear;
+}
+
+.animated-div ul li {
+    font-family: "Roboto";
+    font-size: 20px;
+    padding-top: 2rem;
+
+}
+
+
+
+.description {
+    margin-left: 1rem;
+}
+
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
     height: 100%;
-    width: 60%;
-    background-color: blue;
+    background: var(--lightText);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+}
+
+
+@media (max-width: 1000px) {
+    .animated-div {
+        padding: 30px 30px;
+
+    }
+
+    .animated-div ul li {
+        font-family: "Roboto";
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .section2 {
+        justify-content: left;
+    }
+    .timeline {
+        margin: 20px auto;
+        min-width: 320px;
+        font-size: 12px;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+        left: 0%
+    }
+    .animated-div {
+        width: 80%;
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+    .container img {
+        left: 10px;
+    }
+
+    .animated-div ul li {
+        font-family: "Roboto";
+        font-size: 15px;
+        padding-top: 1rem;
+    
+    }
+
+}
+
+/* SECTION 3 PROJECTS */
+
+.projects-container {
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    height: 90vh;
+    padding-right: 1rem;
+    align-items: center;
+
+}
+
+.project-card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 15rem;
+    position: relative;
+    width: 90%;
+    justify-content: center;
+}
+
+.thumbnail {
+    position: relative;
+    border-radius: 8px;
+    flex: 1.5;
+    height: 100%;
+}
+
+.description-proj {
+    background-color: rgb(42, 88, 105);
+    flex: 1;
+    height: 100%
+}
+
+@media (max-width:800px) {
+    .description-proj {
+        display: none;
+    }
+}
+
+.thumbnail img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+
+
+.thumbnail:hover img {
+    filter: brightness(50%);
+}
+
+
+.tech-stack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.197);
+    font-size: rem;
+    text-align: center;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
-.blueprint {
-    background-color: red;
-    height:50%;
-    width: 100%
+.tech-stack img {
+    width: 50px;
+    height: 50px;
+    color: white;
 }
 
-.hatch {
-    background-color: pink;
-    height: 50%;
-    width: 100%
+.thumbnail:hover .tech-stack {
+    opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+

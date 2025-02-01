@@ -15,7 +15,9 @@
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-rough-notation": "^1.0.5",
     "react-scripts": "5.0.1",
+    "rough-notation": "^0.5.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

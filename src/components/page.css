@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
-    background-color: var(--background);
+    background: var(--background);
 
   }
 
@@ -44,8 +44,8 @@
     width: 100%;
     max-height: 10vmin;
     z-index: 10000;
-    background-color: var(--background); 
     color: var(--lightText);
+    background-color: var(--background);
     
   }
 
@@ -127,17 +127,16 @@
 }
 
 .socials {
-    display: flex;
     justify-content:flex-start;
-    align-items: last baseline;
+    align-items: center;
     width: fit-content;
 }
 
 .socials a {
     height: 3vh;
     min-height: 1.5rem;
-    padding-right: min(3.5rem, 6vw);
-    padding-bottom: 2vmin;
+    padding-right: min(3rem, 5vw);
+    
 
  }
 
@@ -146,7 +145,13 @@
     width: 80%;
     flex: 2;
     display: flex;
-    justify-content: center;
+ }
+
+ @media (max-width: 1000px) {
+    .photo {
+        justify-content: center;
+    }
+    
  }
 
  #headshot {
@@ -173,7 +178,10 @@
     letter-spacing: 1rem;
     font-size: clamp(1.6rem, 5vw, 3.5rem);
     color: var(--lightText);
-    /* background-color: blueviolet; */
+    display: flex;
+    align-items:baseline;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 @media (max-height: 800px) and (min-width: 800px) {
@@ -185,7 +193,7 @@
 @media (max-width: 700px) {
     #firstline {
         letter-spacing: clamp(0.6rem, 1vw, 0.8rem);
-        font-size: clamp(1.2rem, 5vw, 2rem);
+        font-size: clamp(1.2rem, 6vw, 2.7rem);
     }
 }
 
@@ -202,7 +210,6 @@
     -2px -2px 0px rgba(0, 0, 0, 0.7), /* top-left */
     2px -2px 0px rgba(0, 0, 0, 0.7), /* top-right */
     -2px 2px 0px rgba(0, 0, 0, 0.7); /* bottom-left */
-    /* background-color: red; */
 }
 
 @media (max-height: 800px) and (min-width: 800px){
@@ -241,6 +248,13 @@
     #thirdline {
         font-size: 1rem;
         line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 700px){
+    #thirdline {
+        font-size: clamp(0.8rem, 3vw, 2rem);
+        line-height: clamp(0.9rem, 4vw, 2.5rem);
     }
 }
 
@@ -487,8 +501,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0; /* Start with the div hidden */
+    animation: fadeIn 5s forwards; /* Apply the fade-in animation */
+}
 
-
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End with the div fully visible */
+    }
 }
 
 
@@ -531,8 +551,8 @@
 .animated-div {
     width: 30vw;
     padding: 50px 50px;
-    background-color: var(--lightText);;
-    color: var(--darkText);
+    background-color: #caa5aff6;
+    color: black;
     position: relative;
     border-radius: 6px;
     margin-right: 3rem;
@@ -549,7 +569,7 @@
 .visible {
     left: 0%;
     opacity: 1;
-    transition: left 0.5s linear, opacity 0.5s linear;
+    transition: left 1s linear, opacity 1s linear;
 }
 
 .animated-div ul li {
@@ -572,7 +592,7 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    background: var(--lightText);
+    background: #caa5aff6;
     top: 0;
     left: 50%;
     margin-left: -3px;

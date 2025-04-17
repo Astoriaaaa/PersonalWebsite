@@ -1,8 +1,8 @@
 .preloader{
     height: 100%;
     width: 100%;
-    background: rgb(255, 222, 172);
-    color: black;
+    background-color: #caa5aff6;
+    color: rgb(255, 230, 187);
     position: fixed;
     display: flex;
     justify-content: center;
@@ -16,6 +16,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     letter-spacing: 5px;
-    background-color: rgb(250, 238, 219);
 }
+
+@media (max-width: 900px) {
+    .preloader {
+        font-size: 1.2rem;
+    }
+}
+
 

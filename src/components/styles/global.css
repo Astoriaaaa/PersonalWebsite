@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cartoon-free');
+
+:root {
+    --background: #49274A;
+    --lightText: #F4DECB;
+    --darkText: #94618E;
+    --Accents: #f6d361;
+    --lightAccents: #caa5aff6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 10vmin;
+    z-index: 10000;
+    color: var(--lightText);
+    background-color: var(--background);
+}
+
+.logo {
+    padding-left: 2vw;
+    font-family: "Cedarville Cursive";
+    font-size: max(4vmin, 1.5rem);
+} 

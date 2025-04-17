@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: auto;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer p {
+  margin: 0;
+} 

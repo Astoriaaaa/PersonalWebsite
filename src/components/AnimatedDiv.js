@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import './page.css'
 
 const AnimatedDiv = ({ children, position, name }) => {
   const divRef = useRef(null);

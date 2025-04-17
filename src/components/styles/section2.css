@@ -1,0 +1,139 @@
+.section2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 90vw;
+    font-family: "Roboto";
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    left: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    z-index: 11;
+    background-color: var(--background);
+}
+
+.right img {
+    left: -20px;
+}
+
+.animated-div {
+    width: 30vw;
+    padding: 50px 50px;
+    background-color: #caa5aff6;
+    color: black;
+    position: relative;
+    border-radius: 6px;
+    margin-right: 3rem;
+    left: -30%;
+    opacity: 20%;
+}
+
+.odd {
+    left: 30%;
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+.visible {
+    left: 0%;
+    opacity: 1;
+    transition: left 1s linear, opacity 1s linear;
+}
+
+.animated-div ul li {
+    font-family: "Roboto";
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+.description {
+    margin-left: 1rem;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #caa5aff6;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+}
+
+@media (max-width: 1000px) {
+    .animated-div {
+        padding: 30px 30px;
+    }
+
+    .animated-div ul li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section2 {
+        justify-content: left;
+    }
+    .timeline {
+        margin: 20px auto;
+        min-width: 320px;
+        font-size: 12px;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+        left: 0%
+    }
+    .animated-div {
+        width: 80%;
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+    .container img {
+        left: 10px;
+    }
+    .animated-div ul li {
+        font-size: 15px;
+        padding-top: 1rem;
+    }
+} 

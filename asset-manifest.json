@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.595c62ae.css",
-    "main.js": "/PersonalWebsite/static/js/main.77430db4.js",
+    "main.css": "/PersonalWebsite/static/css/main.bcc6bb64.css",
+    "main.js": "/PersonalWebsite/static/js/main.4b6682a1.js",
     "static/media/headshot.webp": "/PersonalWebsite/static/media/headshot.fcf7dd31914e79b1966d.webp",
     "static/media/plane2.png": "/PersonalWebsite/static/media/plane2.fff290a745f916074518.png",
     "static/media/plane1.png": "/PersonalWebsite/static/media/plane1.9621b932fc4989a408de.png",
-    "static/media/sddefault.jpg": "/PersonalWebsite/static/media/sddefault.16e4403b237e3bd78935.jpg",
-    "static/media/snake.jpg": "/PersonalWebsite/static/media/snake.0fd3d3f2c121c2ba1fb2.jpg",
-    "static/media/c-icon-1820x2048-2ys190xs.png": "/PersonalWebsite/static/media/c-icon-1820x2048-2ys190xs.8259586892fa0e7bd47c.png",
     "static/media/hatch-logo.png.webp": "/PersonalWebsite/static/media/hatch-logo.png.575959473c9d31aa9991.webp",
     "index.html": "/PersonalWebsite/index.html",
-    "main.595c62ae.css.map": "/PersonalWebsite/static/css/main.595c62ae.css.map",
-    "main.77430db4.js.map": "/PersonalWebsite/static/js/main.77430db4.js.map"
+    "main.bcc6bb64.css.map": "/PersonalWebsite/static/css/main.bcc6bb64.css.map",
+    "main.4b6682a1.js.map": "/PersonalWebsite/static/js/main.4b6682a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.595c62ae.css",
-    "static/js/main.77430db4.js"
+    "static/css/main.bcc6bb64.css",
+    "static/js/main.4b6682a1.js"
   ]
 }

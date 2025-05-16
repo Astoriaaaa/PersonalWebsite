@@ -2,7 +2,7 @@
   width: 100%;
   padding: 1rem 0;
   text-align: center;
-  color: #ffffff;
+  color: var(--lightText);
   font-size: 1rem;
   margin-top: auto;
   background-color: transparent;

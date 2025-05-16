@@ -9,6 +9,8 @@ import headshot from "./images/headshot.webp";
 import './styles/section1.css';
 
 const Section1 = ({ activeSection }) => {
+    const color = '#F4DECB';
+    const hoverColor = '#bd943b';
     return (
         <motion.div id="welcome" className="section1">
             <motion.div
@@ -34,13 +36,13 @@ const Section1 = ({ activeSection }) => {
                     <div className="lines">
                         <div className="socials">
                             <a href="https://github.com/Astoriaaaa" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGithub} style={{ color: '#c7395f', height: 'max(1rem, 3vw)', maxHeight: '2.5rem' }} />
+                                <FontAwesomeIcon icon={faGithub} style={{ color: color, height: 'max(1rem, 3vw)', maxHeight: '2.5rem' }} hoverColor={color}/>
                             </a>
                             <a href="https://www.linkedin.com/in/aayushma-sapkota-8401a4252/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faLinkedin} style={{ color: '#c7395f', height: 'max(1rem, 3vw)', maxHeight: '2.5rem'}} />
+                                <FontAwesomeIcon icon={faLinkedin} style={{ color: color, height: 'max(1rem, 3vw)', maxHeight: '2.5rem'}} hoverColor={color}/>
                             </a>
                             <a href="mailto:aysapkota@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faEnvelope} style={{ color: '#c7395f', height: 'max(1rem, 3vw)', maxHeight: '2.5rem' }} />
+                                <FontAwesomeIcon icon={faEnvelope} style={{ color: color, height: 'max(1rem, 3vw)', maxHeight: '2.5rem' }} hoverColor={color}/>
                             </a>
                         </div>
                         <div id="firstline">

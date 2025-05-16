@@ -3,16 +3,18 @@
 @import url('https://fonts.cdnfonts.com/css/cartoon-free');
 
 :root {
-    --background: #49274A;
+    --background: #7f5370;
     --lightText: #F4DECB;
-    --darkText: #94618E;
-    --Accents: #f6d361;
-    --lightAccents: #caa5aff6;
+    --darkText: #bd943b;
+    --lightAccents: #8b606af6;
+    --lightAccents2: #c3af84;
+    --lightAccents3: #bea0a7f6;
 }
 
 * {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .page {
@@ -42,3 +44,7 @@
     font-family: "Cedarville Cursive";
     font-size: max(4vmin, 1.5rem);
 } 
+
+.socials a :hover {
+    color: #d0bdad;
+  }

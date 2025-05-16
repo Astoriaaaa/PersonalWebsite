@@ -13,8 +13,8 @@ const Section2 = () => {
                 <div className="container right">
                     <img src={bp} alt="Blueprint Logo" />
                     <AnimatedDiv position="odd" name="animated-div">
-                        <h1>SWD @ UW Blueprint</h1>
-                        <p>Nov 2024 -- Present</p>
+                        <h1 className="container-title">SWD @ UW Blueprint</h1>
+                        <p className="container-title">Nov 2024 -- Present</p>
                         <div className="description">
                             <ul>
                                 <li>
@@ -31,8 +31,8 @@ const Section2 = () => {
                 <div className="container left">
                     <img src={rm} alt="RetailMint Logo" />
                     <AnimatedDiv position="even" name="animated-div">
-                        <h1>Full-stack @ InvestMint Inc.</h1>
-                        <p>Jan 2025 -- April 2025</p>
+                        <h1 className="container-title">Full-stack @ InvestMint Inc.</h1>
+                        <p className="container-title">Jan 2025 -- April 2025</p>
                         <div className="description">
                             <ul>
                                 <li>
@@ -57,8 +57,8 @@ const Section2 = () => {
                 <div className="container right">
                     <img src={h} alt="Hatch Logo" />
                     <AnimatedDiv position="odd" name="animated-div">
-                        <h1>SWE @ Hatch</h1>
-                        <p>May 2024 -- Aug 2024</p>
+                        <h1 className="container-title">SWE @ Hatch</h1>
+                        <p className="container-title">May 2024 -- Aug 2024</p>
                         <div className="description">
                             <ul>
                                 <li>

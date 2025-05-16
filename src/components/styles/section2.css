@@ -42,7 +42,7 @@
     border-radius: 50%;
     right: -20px;
     z-index: 11;
-    background-color: var(--background);
+    background-color: var(--lightText);
 }
 
 .right img {
@@ -52,13 +52,14 @@
 .animated-div {
     width: 30vw;
     padding: 50px 50px;
-    background-color: #caa5aff6;
+    background-color: var(--lightText);
     color: black;
     position: relative;
     border-radius: 6px;
     margin-right: 3rem;
     left: -30%;
     opacity: 20%;
+    
 }
 
 .odd {
@@ -77,10 +78,12 @@
     font-family: "Roboto";
     font-size: 20px;
     padding-top: 2rem;
+    background-color: var(--lightText);
 }
 
 .description {
     margin-left: 1rem;
+
 }
 
 .timeline::after {
@@ -88,11 +91,15 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #caa5aff6;
+    background: var(--lightText);
     top: 0;
     left: 50%;
     margin-left: -3px;
     z-index: 0;
+}
+
+.container-title {
+    color: var(--darkText);
 }
 
 @media (max-width: 1000px) {
